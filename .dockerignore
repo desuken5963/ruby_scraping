@@ -1,4 +1,5 @@
 .gitignore
 Dockerfile
+docker-compose.yml
 .history/
 README.md

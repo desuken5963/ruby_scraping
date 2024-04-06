@@ -8,14 +8,11 @@ RUN apt-get update -qq && apt-get install -y build-essential libpq-dev
 WORKDIR /app
 
 # ローカルのGemfileとGemfile.lockをコンテナにコピー
-COPY Gemfile /Gemfile
+# COPY Gemfile /app/Gemfile
 # COPY Gemfile.lock /app/Gemfile.lock
 
 # Bundlerを使用してGemをインストール
-RUN bundle install
+# RUN bundle install
 
 # ローカルのプロジェクトディレクトリをコンテナの作業ディレクトリにコピー
 COPY . /app
-
-# コンテナが起動した後にbashシェルを起動
-CMD ["/bin/bash"]
