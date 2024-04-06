@@ -6,13 +6,3 @@ RUN apt-get update -qq && apt-get install -y build-essential libpq-dev
 
 # 作業ディレクトリの設定
 WORKDIR /app
-
-# ローカルのGemfileとGemfile.lockをコンテナにコピー
-# COPY Gemfile /app/Gemfile
-# COPY Gemfile.lock /app/Gemfile.lock
-
-# Bundlerを使用してGemをインストール
-# RUN bundle install
-
-# ローカルのプロジェクトディレクトリをコンテナの作業ディレクトリにコピー
-COPY . /app
