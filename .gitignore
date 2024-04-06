@@ -1,0 +1,7 @@
+# Mac
+.Spotlight-V100
+.DS_Store
+.Trashes
+
+# VS Code Local History
+.history
