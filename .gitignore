@@ -8,3 +8,6 @@
 
 # HTML
 html
+
+# rubocop
+.rubocop.yml
