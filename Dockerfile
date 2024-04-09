@@ -1,8 +1,8 @@
-# Rubyのバージョン2.6.5を使用
-FROM ruby:2.6.5
+# Rubyのバージョン3.0.3を使用
+FROM ruby:3.0.3
 
-# 必要なパッケージのインストール
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev
+# nokogiriのinstall
+RUN gem install nokogiri
 
 # 作業ディレクトリの設定
 WORKDIR /app
