@@ -4,5 +4,6 @@ services:
     build: .
     volumes:
       - .:/app
-    command: /bin/bash
+    # command: /bin/bash
+    stdin_open: true
     tty: true
